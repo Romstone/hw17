@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HW 17</title>
+</head>
+<body>
+<div class="main">
+    <div class="left">
+        <h1> New Travel:</h1>
+
+        <input type="text" class="origin"  id="origin" placeholder="Origin"> <br>
+        <input type="text" class="destination" id="destination" placeholder="Destination"> <br>
+        <input type="text" class="budget" id="budget" placeholder="Budget">
+        <h3>Date start:</h3>
+        <input  type="date" class="start_date" id="start_date">
+        <h3>Date end:</h3>
+        <input  type="date" class="end_date" id="end_date">
+        <h3>Persons:</h3>
+        <select class="persons" id="persons">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7 and more</option>
+        </select>
+
+        <h3>Main transfer type</h3>
+        <select id="vehicle" class="vehicle">
+            <option>--</option>
+            <option>Private car</option>
+            <option>Railway</option>
+            <option>Fly</option>
+            <option>Rent car</option>
+            <option>Taxi</option>
+            <option>Bus</option>
+        </select>
+        <button id="save_travel" class="btn" onclick="addTicket()">Save Travel</button>
+
+    </div>
+    <div class="right">
+        <h1 class="history">Travel History:</h1>
+        <div class="output" id="output"></div>
+    </div>
+</div>
+    <script src="script/script.js"></script>
+</body>
+</html>
