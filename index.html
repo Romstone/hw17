@@ -2,51 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/normalize.css">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>HW 17</title>
 </head>
 <body>
-<div class="main">
-    <div class="left">
-        <h1> New Travel:</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <div class="card add-travel-card">
+                <h3>New travel:</h3>
+                <input type="text" class="form-control" id="dest_city" placeholder="City">
+                <input type="text" class="form-control" id="dest_country" placeholder="Country">
+                <input type="number" class="form-control" id="budget_value" placeholder="Budget">
+                <label for="start_date">Date start</label><input type="date" class="form-control" id="start_date" placeholder="Date start">
+                <label for="end_date">Date end</label><input type="date" class="form-control" id="end_date" placeholder="Date end">
+                <label for="persons">Persons:</label>
+                <select id="persons" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value=">7">>7</option>
+                </select>
+                <label for="transfer_type">Main transfer type:</label>
+                <select id="transfer_type" class="form-control">
+                    <option value="def">---</option>
+                    <option value="car">Private car</option>
+                    <option value="bus">Bus</option>
+                    <option value="railway">Railway</option>
+                    <option value="fly">Fly</option>
+                    <option value="rent_cat">Rent car</option>
+                    <option value="taxi">Taxi</option>
+                </select>
+                <button onclick="save()" class="btn btn-success btn-save-travel">Save travel</button>
+            </div>
+        </div>
 
-        <input type="text" class="origin"  id="origin" placeholder="Origin"> <br>
-        <input type="text" class="destination" id="destination" placeholder="Destination"> <br>
-        <input type="text" class="budget" id="budget" placeholder="Budget">
-        <h3>Date start:</h3>
-        <input  type="date" class="start_date" id="start_date">
-        <h3>Date end:</h3>
-        <input  type="date" class="end_date" id="end_date">
-        <h3>Persons:</h3>
-        <select class="persons" id="persons">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7 and more</option>
-        </select>
-
-        <h3>Main transfer type</h3>
-        <select id="vehicle" class="vehicle">
-            <option>--</option>
-            <option>Private car</option>
-            <option>Railway</option>
-            <option>Fly</option>
-            <option>Rent car</option>
-            <option>Taxi</option>
-            <option>Bus</option>
-        </select>
-        <button id="save_travel" class="btn" onclick="addTicket()">Save Travel</button>
-
-    </div>
-    <div class="right">
-        <h1 class="history">Travel History:</h1>
-        <div class="output" id="output"></div>
+        <div class="col-md-6 col-sm-12 travel-history">
+            <!--<h3>Travel history:</h3>
+            <div class="card travel-card">
+                <div class="title">
+                    <h4>From Haifa to Jerusalem</h4>
+                    <i class="bi bi-pencil-square edit"></i>
+                    <i class="bi bi-x-circle remove"></i>
+                    <i class="bi bi-three-dots-vertical details"></i>
+                </div>
+                <span>Expected budget: 1000 ILS</span>
+                <span>1.03.2023 - 4.03.2023 | 2 persons | Private car</span>
+            </div>-->
+            <span id="output"></span>
+        </div>
     </div>
 </div>
-    <script src="script/script.js"></script>
+
+<script src="/script/script.js"></script>
 </body>
 </html>

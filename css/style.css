@@ -1,129 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
-
-body {
-    font-family: 'Roboto';
+body{
+    padding: 10vw;
 }
-
-.main{
-    width: 1440px;
-    margin: 0 auto;
+.title{
+    font-weight: bolder;
+}
+.form-control {
+    display: inline-block;
+    width: 20vw;
+}
+span{
+    line-height: 40px;
+}
+.add-travel-card{
+    padding: 16px;
+    background-color: #ddd;
+}
+.btn-save-travel{
+    margin-top: 16px;
+}
+.travel-card{
+    position: relative;
+    padding: 16px;
+    background-color: olivedrab;
+    margin-top: 8px;
+}
+.title{
     display: flex;
+    flex-direction: row;
 }
-
-.left{
-    background-color: lightgrey;
-    width: 100%;
-    height: 100%;
-    border: 1px solid dimgrey;
-    border-radius: 10px;
-    padding-left: 50px;
-    padding-bottom: 30px;
-    margin-top: 50px;
-    flex: 2;
+.title h4{
+    flex:1;
 }
-
-.right_history{
-    background-color: white;
-}
-
-
-
-.right {
-    flex: 3;
-    display: flex;
-    justify-content: space-between;
-    align-content: end;
-    margin-top: 50px;
-    padding-left: 48px;
-    padding-right: 128px;
-}
-
-.elementHistory{
-    font-size: 15px;
-    background: forestgreen;
-    width: 30em;
-    max-width: 30em;
-    border-radius: 10px;
-    list-style-type: none;
-    padding-left: 30px;
-    padding-bottom: 1px;
-}
-
-.origin {
-    border: 0;
-    border-radius: 5px;
-    padding: 10px 30px 10px 10px;
-    font-size: 20px;
-}
-
-.destination {
-    margin-top: 2px;
-    border: 0;
-    border-radius: 5px;
-    padding: 10px 30px 10px 10px;
-    font-size: 20px;
-}
-
-.budget {
-    margin-top: 2px;
-    border: 0;
-    border-radius: 5px;
-    padding: 10px 30px 10px 10px;
-    font-size: 20px;
-}
-
-.start_date {
-    border: 0;
-    border-radius: 5px;
-    padding: 10px 120px 10px 10px;
-    font-size: 20px;
-}
-
-.end_date {
-    border: 0;
-    border-radius: 5px;
-    padding: 10px 120px 10px 10px;
-    font-size: 20px;
-}
-
-.persons {
-    border: 0;
-    border-radius: 5px;
-    padding: 10px 160px 10px 10px;
-    font-size: 20px;
-}
-
-.vehicle {
-    border: 0;
-    border-radius: 5px;
-    padding: 10px 165px 10px 10px;
-    font-size: 20px;
-}
-
-.right {
-    display: flex;
-    flex-direction: column;
-}
-
-.output {
-    background-color: darkolivegreen;
-}
-
-.btn {
-    color: white;
-    font-size: 20px;
-    margin-top: 20px;
-    width: 90%;
-    padding: 15px 0 15px 0;
-    border: 0;
-    border-radius: 5px;
-    background-color: seagreen;
+.title i{
     cursor: pointer;
+    padding: 4px;
 }
-
-
-.btn:active {
-    color: black;
-    background: aliceblue;
+.ticket_card {
+    display: block;
 }
-
